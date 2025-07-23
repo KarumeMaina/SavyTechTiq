@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon-16x16.png" rel="icon">
+  <link href="assets/img/logo_-_no_background.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -27,13 +27,35 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Dewi
-  * Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+  <style>
+    .service-item {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+      transition: 0.3s;
+    }
+    .service-item:hover {
+      transform: translateY(-10px);
+    }
+    .service-item .img {
+      margin-bottom: 15px;
+    }
+    .service-item .icon {
+      font-size: 32px;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+  </style>
+
+
 </head>
 
 <body class="index-page">
@@ -42,8 +64,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/Color logo - no background.png" alt="">
         <h1 class="sitename">SavyTech</h1>
       </a>
 
@@ -52,9 +73,11 @@
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#services-2">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -83,44 +106,44 @@
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section">
+<section id="about" class="about section">
 
-      <div class="container">
-
-        <div class="row gy-4">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident laboris nisi ut aliquip ex ea commodo</h3>
-            <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
-            <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-            <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-              </p>
-
-              <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
-                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
+  <div class="container">
+    <div class="row gy-4">
+      
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3>Empowering Businesses Through Innovative Tech Solutions</h3>
+        <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="About SavyTechTiq">
+        <p>SavyTechTiq Solutions Ltd is a next-generation technology company delivering smart, scalable, and secure IT solutions. We specialize in network architecture, cybersecurity, software development, and full-stack IT support tailored for businesses, organizations, and institutions.</p>
+        <p>Our mission is to bridge the gap between technology and people by offering solutions that are intuitive, effective, and future-ready. We bring together a team of highly skilled professionals with deep expertise in diverse areas of computer science and information technology.</p>
       </div>
 
-    </section><!-- /About Section -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+        <div class="content ps-0 ps-lg-5">
+          <p class="fst-italic">
+            At SavyTechTiq, we believe in building technology that works for you — not the other way around.
+          </p>
+          <ul>
+            <li><i class="bi bi-check-circle-fill"></i> <span>Custom IT infrastructure planning, deployment, and support</span></li>
+            <li><i class="bi bi-check-circle-fill"></i> <span>Robust cybersecurity frameworks and real-time threat response</span></li>
+            <li><i class="bi bi-check-circle-fill"></i> <span>Software and web applications tailored for productivity and growth</span></li>
+          </ul>
+          <p>
+            From startups to enterprises, we deliver solutions that align with your goals, scale with your growth, and adapt to emerging challenges. Let us be your tech backbone in a digital-first world.
+          </p>
+
+          <div class="position-relative mt-4">
+            <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="SavyTechTiq in action">
+            <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn" title="Watch Our Mission Video"></a> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- /About Section -->
+
 
     <!-- Stats Section -->
     <section id="stats" class="stats section light-background">
@@ -176,74 +199,100 @@
     </section><!-- /Stats Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section">
+<section id="services" class="services section py-5">
+  <div class="container section-title text-center mb-5" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <p>Expert IT & Tech Solutions Tailored to Your Needs</p>
+  </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Featured Srvices<br></p>
-      </div><!-- End Section Title -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper services-swiper">
+      <div class="swiper-wrapper">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-5">
-
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-item">
-              <div class="img">
-                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-activity"></i>
-                </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Nesciunt Mete</h3>
-                </a>
-                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
-              </div>
+        <div class="swiper-slide">
+          <div class="service-item">
+            <div class="img"><img src="assets/img/services-1.jpg" class="img-fluid" alt="Cybersecurity"></div>
+            <div class="details position-relative">
+              <div class="icon"><i class="bi bi-shield-lock-fill"></i></div>
+              <h3>Cybersecurity & Risk Management</h3>
+              <p>We help secure your IT infrastructure with audits, endpoint protection, and threat detection.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+        </div>
 
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item">
-              <div class="img">
-                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-broadcast"></i>
-                </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Eosle Commodi</h3>
-                </a>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              </div>
+        <div class="swiper-slide">
+          <div class="service-item">
+            <div class="img"><img src="assets/img/services-2.jpg" class="img-fluid" alt="Networking"></div>
+            <div class="details position-relative">
+              <div class="icon"><i class="bi bi-diagram-3-fill"></i></div>
+              <h3>Networking & IT Infrastructure</h3>
+              <p>Reliable wired/wireless networks, structured cabling, and server room setup.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+        </div>
 
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-item">
-              <div class="img">
-                <img src="assets/img/services-3.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-easel"></i>
-                </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Ledo Markt</h3>
-                </a>
-                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-              </div>
+        <div class="swiper-slide">
+          <div class="service-item">
+            <div class="img"><img src="assets/img/services-3.jpg" class="img-fluid" alt="Software"></div>
+            <div class="details position-relative">
+              <div class="icon"><i class="bi bi-code-slash"></i></div>
+              <h3>Custom Software Development</h3>
+              <p>Scalable web and desktop apps tailored to your workflows and business goals.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+        </div>
 
+        <div class="swiper-slide">
+          <div class="service-item">
+            <div class="img"><img src="assets/img/services-1.jpg" class="img-fluid" alt="Cloud"></div>
+            <div class="details position-relative">
+              <div class="icon"><i class="bi bi-cloud-arrow-up-fill"></i></div>
+              <h3>Cloud Migration & Hosting</h3>
+              <p>Secure cloud deployment and hosting with AWS, Azure, or GCP.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="service-item">
+            <div class="img"><img src="assets/img/services-2.jpg" class="img-fluid" alt="Consulting"></div>
+            <div class="details position-relative">
+              <div class="icon"><i class="bi bi-person-lines-fill"></i></div>
+              <h3>IT Consulting & Strategy</h3>
+              <p>Guiding digital transformation with scalable, tailored tech solutions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="service-item">
+            <div class="img"><img src="assets/img/services-3.jpg" class="img-fluid" alt="Support"></div>
+            <div class="details position-relative">
+              <div class="icon"><i class="bi bi-wrench-adjustable-circle-fill"></i></div>
+              <h3>IT Support & Maintenance</h3>
+              <p>Helpdesk, system updates, troubleshooting, and on-site support.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="service-item">
+            <div class="img"><img src="assets/img/services-1.jpg" class="img-fluid" alt="Training"></div>
+            <div class="details position-relative">
+              <div class="icon"><i class="bi bi-mortarboard-fill"></i></div>
+              <h3>Tech Training & Certification</h3>
+              <p>Upskilling your team in cybersecurity, cloud, networking & more.</p>
+            </div>
+          </div>
         </div>
 
       </div>
+      <div class="swiper-pagination mt-4"></div>
+    </div>
+  </div>
+</section> <!-- End Of Services Section -->
 
-    </section><!-- /Services Section -->
+
 
     <!-- Clients Section -->
     <section id="clients" class="clients section light-background">
@@ -282,342 +331,289 @@
 
     </section><!-- /Clients Section -->
 
-    <!-- Features Section -->
-    <section id="features" class="features section">
+    <!-- Features Section with Swiper -->
+<section id="features" class="features section">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Our Features</h2>
+      <p>Explore what sets SavyTechTiq apart in IT & Tech Services</p>
+    </div>
 
-      <div class="container">
+    <div class="swiper featuresSwiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
 
-        <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
-          <li class="nav-item col-3">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-              <i class="bi bi-binoculars"></i>
-              <h4 class="d-none d-lg-block">Modi sit est dela pireda nest</h4>
-            </a>
-          </li>
-          <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-              <i class="bi bi-box-seam"></i>
-              <h4 class="d-none d-lg-block">Unde praesenti mara setra le</h4>
-            </a>
-          </li>
-          <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-              <i class="bi bi-brightness-high"></i>
-              <h4 class="d-none d-lg-block">Pariatur explica nitro dela</h4>
-            </a>
-          </li>
-          <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
-              <i class="bi bi-command"></i>
-              <h4 class="d-none d-lg-block">Nostrum qui dile node</h4>
-            </a>
-          </li>
-        </ul><!-- End Tab Nav -->
-
-        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="tab-pane fade active show" id="features-tab-1">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i>
-                    <spab>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</spab>
-                  </li>
-                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit</span>.</li>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-                </ul>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-1.jpg" alt="" class="img-fluid">
-              </div>
+        <!-- Feature 1 -->
+        <div class="swiper-slide">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h3>Cybersecurity & Risk Management</h3>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> Threat detection and penetration testing</li>
+                <li><i class="bi bi-check2-all"></i> Endpoint security and firewalls</li>
+                <li><i class="bi bi-check2-all"></i> 24/7 monitoring & incident response</li>
+              </ul>
+              <p>Protect your business from digital threats with our security-first approach.</p>
             </div>
-          </div><!-- End Tab Content Item -->
-
-          <div class="tab-pane fade" id="features-tab-2">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-2.jpg" alt="" class="img-fluid">
-              </div>
+            <div class="col-lg-6 text-center">
+              <img src="assets/img/working-1.jpg" alt="Cybersecurity" class="img-fluid">
             </div>
-          </div><!-- End Tab Content Item -->
-
-          <div class="tab-pane fade" id="features-tab-3">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
-                </ul>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-3.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End Tab Content Item -->
-
-          <div class="tab-pane fade" id="features-tab-4">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore rerum</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-4.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End Tab Content Item -->
-
+          </div>
         </div>
 
-      </div>
+        <!-- Feature 2 -->
+        <div class="swiper-slide">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h3>Networking & Infrastructure</h3>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> Structured cabling and Wi-Fi setup</li>
+                <li><i class="bi bi-check2-all"></i> Enterprise network design & security</li>
+                <li><i class="bi bi-check2-all"></i> LAN/WAN, routers, VPNs, firewalls</li>
+              </ul>
+              <p>Seamless and secure connectivity solutions for your growing business.</p>
+            </div>
+            <div class="col-lg-6 text-center">
+              <img src="assets/img/working-2.jpg" alt="Networking" class="img-fluid">
+            </div>
+          </div>
+        </div>
 
-    </section><!-- /Features Section -->
+        <!-- Feature 3 -->
+        <div class="swiper-slide">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h3>Custom Software Development</h3>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> Web, mobile & enterprise applications</li>
+                <li><i class="bi bi-check2-all"></i> Agile development & continuous delivery</li>
+                <li><i class="bi bi-check2-all"></i> Tailored platforms built for your workflow</li>
+              </ul>
+              <p>We turn your ideas into secure, scalable, and functional software tools.</p>
+            </div>
+            <div class="col-lg-6 text-center">
+              <img src="assets/img/working-3.jpg" alt="Software" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="swiper-slide">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h3>Cloud Migration & Hosting</h3>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> AWS, Azure, GCP deployment</li>
+                <li><i class="bi bi-check2-all"></i> Cloud backups and DR systems</li>
+                <li><i class="bi bi-check2-all"></i> Scalable hosting for modern workloads</li>
+              </ul>
+              <p>Modernize your systems and boost collaboration with secure cloud solutions.</p>
+            </div>
+            <div class="col-lg-6 text-center">
+              <img src="assets/img/working-4.jpg" alt="Cloud" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more features similarly if needed -->
+
+      </div>
+      <!-- Pagination (Optional) -->
+      <div class="swiper-pagination mt-4"></div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Services 2 Section -->
-    <section id="services-2" class="services-2 section light-background">
+<section id="services-2" class="services-2 section light-background">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Our Expertise</h2>
+    <p>Explore the Full Spectrum of IT & Technology Services</p>
+  </div><!-- End Section Title -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>CHECK OUR SERVICES</p>
-      </div><!-- End Section Title -->
+  <div class="container">
+    <div class="row gy-4">
 
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-briefcase icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-card-checklist icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-bar-chart icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-binoculars icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-brightness-high icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
+      <!-- Cybersecurity -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item d-flex position-relative h-100">
+          <i class="bi bi-shield-lock icon flex-shrink-0"></i>
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">Cybersecurity & Risk Management</a></h4>
+            <p class="description">Fortify your digital assets with penetration testing, malware protection, firewall setup, and compliance-based audits.</p>
+          </div>
         </div>
-
       </div>
 
-    </section><!-- /Services 2 Section -->
+      <!-- Networking -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item d-flex position-relative h-100">
+          <i class="bi bi-diagram-3 icon flex-shrink-0"></i>
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">Network Design & Infrastructure</a></h4>
+            <p class="description">Design and implement high-performance LAN/WAN, structured cabling, Wi-Fi, VPNs, and server environments.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Software Development -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item d-flex position-relative h-100">
+          <i class="bi bi-code-slash icon flex-shrink-0"></i>
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">Custom Software Development</a></h4>
+            <p class="description">We build intuitive, secure, and scalable web and mobile applications that align with your business goals and processes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud Solutions -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item d-flex position-relative h-100">
+          <i class="bi bi-cloud-upload icon flex-shrink-0"></i>
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">Cloud Infrastructure & Hosting</a></h4>
+            <p class="description">Migrate your services to the cloud with AWS, Azure, or GCP. Benefit from secure backups, uptime SLAs, and easy scaling.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- IT Consultancy -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item d-flex position-relative h-100">
+          <i class="bi bi-person-workspace icon flex-shrink-0"></i>
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">IT Consulting & Advisory</a></h4>
+            <p class="description">Strategize smarter IT investments with vendor-neutral consulting, audits, and digital transformation planning.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maintenance -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-item d-flex position-relative h-100">
+          <i class="bi bi-wrench-adjustable-circle icon flex-shrink-0"></i>
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">Technical Support & Maintenance</a></h4>
+            <p class="description">On-site and remote support for software, networks, and devices. We ensure uptime, updates, and quick troubleshooting.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backup & Recovery -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
+        <div class="service-item d-flex position-relative h-100">
+          <i class="bi bi-hdd-stack icon flex-shrink-0"></i>
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">Backup & Disaster Recovery</a></h4>
+            <p class="description">Protect critical data with encrypted backups, version control, and failover systems for seamless recovery after downtime.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><!-- /Services 2 Section -->
+
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section dark-background">
+<section id="testimonials" class="testimonials section dark-background">
+  <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
 
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
+    <div class="swiper testimonials-swiper">
+      <div class="swiper-wrapper">
+        <!-- Testimonial Slide 1 -->
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>Grace Muthoni</h3>
+            <h4>IT Manager, SafeNet Holdings</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p><i class="bi bi-quote quote-icon-left"></i>
+              SavyTechTiq upgraded our entire network infrastructure with zero downtime. Their professionalism and support were exceptional.
+              <i class="bi bi-quote quote-icon-right"></i></p>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
 
+        <!-- Add more slides as needed -->
+
       </div>
+      <div class="swiper-pagination"></div>
+    </div>
 
-    </section><!-- /Testimonials Section -->
+    <!-- Submit Button -->
+    <div class="text-center mt-4">
+      <button type="button" class="btn btn-primary px-4 py-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#testimonialModal">
+        <i class="bi bi-chat-left-text me-2"></i>Submit Your Testimonial
+      </button>
+    </div>
+  </div>
+</section>
 
-    <!-- Portfolio Section -->
+<!-- Submit Modal -->
+<div class="modal fade" id="testimonialModal" tabindex="-1" aria-labelledby="testimonialModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <form action="#" method="POST">
+        <div class="modal-header">
+          <h5 class="modal-title" id="testimonialModalLabel">Submit a Testimonial</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="testimonialName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="testimonialName" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="testimonialTitle" class="form-label">Your Role / Title</label>
+            <input type="text" class="form-control" id="testimonialTitle" name="title" required>
+          </div>
+          <div class="mb-3">
+            <label for="testimonialMessage" class="form-label">Your Feedback</label>
+            <textarea class="form-control" id="testimonialMessage" name="message" rows="4" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="testimonialPhoto" class="form-label">Profile Image (optional)</label>
+            <input type="file" class="form-control" id="testimonialPhoto" name="photo" accept="image/*">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Submit Testimonial</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Swiper Init Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.testimonials-swiper', {
+      loop: true,
+      speed: 800,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false
+      },
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      }
+    });
+  });
+</script>
+
+    <!-- Portfolio Section --> 
     <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
@@ -790,7 +786,7 @@
 
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </section> <!-- /Portfolio Section
 
     <!-- Team Section -->
     <section id="team" class="team section light-background">
@@ -1030,6 +1026,47 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  new Swiper('.services-swiper', {
+    loop: true,
+    speed: 600,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1200: { slidesPerView: 3 }
+    }
+  });
+</script>
+
+<script>
+  var swiper = new Swiper(".featuresSwiper", {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    speed: 600,
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
 
 </body>
 
